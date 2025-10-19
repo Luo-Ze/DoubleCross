@@ -1,0 +1,305 @@
+{
+  "id": 5100000,
+  "name": "训练",
+  "text": "你清楚你的处境，也知道你需要为此做些什么努力。",
+  "tips": "",
+  "once_new": 1,
+  "round_number": 1,
+  "waiting_round": 0, //常驻
+  "waiting_round_end_action": [
+  ],
+  "method_settlement": "",
+  "auto_begin": 0,
+  "auto_result": 0,
+  "location": "野外:[2,6]",
+  "icon": "rite_10",
+  "tag_tips": [
+    
+  ],
+  "tag_tips_up": {
+    "tips": [],
+    "type": "normal_result"
+  },
+  "tips_text": [
+    "你可以在此处训练你的追随者，提升他们的属性。",
+    "不同位置可以提升不同的属性。",
+    "满足特定条件时，你可以触发一些有趣的事件。"
+  ],
+  "open_conditions": [
+  ],
+  "random_text": {
+  },
+  "random_text_up": {
+  },
+  "random_effect": {
+  },
+  "settlement_prior": [
+  ],
+  "settlement": [
+    {
+      "condition": {
+   
+      },
+      "result_title": "郊外训练场",
+      "result_text": "尽管你不喜欢锻炼，但依旧效仿其他权贵建造了这里——谁能想到它真的会被用上？",
+      "result": {
+      },
+      "action": {
+        "rite": 5100000
+      }
+    }
+  ],
+
+  "settlement_extre": [
+    {
+      "condition": {
+        "s1": 1
+      },
+      "result_title": "主角的训练",
+      "result_text": "你抖擞精神来到训练场地，开始了一天的训练，为了寻求活下去的希望。",
+      "result": {
+        "choose": {
+          "s1+体魄": 1,
+          "s1+魅力": 1,
+          "s1+智慧": 1,
+          "s1+战斗": 1,
+          "s1+社交": 1,
+          "s1+生存": 1,
+          "s1+魔力": 1,
+          "s1+隐匿": 1
+        }
+      },
+      "action": {
+      }
+    },
+    {
+      "condition": {
+        "s2": 1
+      },
+      "result_title": "体能训练",
+      "result_text": "跑步、蹲起、俯卧撑，[s2.name]不断地消耗着自己的体力。",
+      "result": {
+        "s2+体魄": 1
+      },
+      "action": {
+
+      }
+    },
+    {
+      "condition": {
+        "s3": 1
+      },
+      "result_title": "衣着打扮",
+      "result_text": "至少你的衣物还是很多的，[s3.name]从衣柜中翻找着，尝试着为自己搭配出一身合格的服饰。",
+      "result": {
+        "s3+魅力": 1
+      },
+      "action": {
+
+      }
+    },
+    {
+      "condition": {
+        "s4": 1
+      },
+      "result_title": "算数推演",
+      "result_text": "[s4.name]看着眼前的算数题，一支笔在旁边的草纸上不停演算。",
+      "result": {
+        "s4+智慧": 1
+      },
+      "action": {
+
+      }
+    },
+    {
+      "condition": {
+        "s5": 1
+      },
+      "result_title": "舞枪挥剑",
+      "result_text": "[s5.name]挥舞着沉重的武器，向着面前的稻草人不断发起攻击。",
+      "result": {
+        "s5+战斗": 1
+      },
+      "action": {
+
+      }
+    },
+    {
+      "condition": {
+        "s6": 1
+      },
+      "result_title": "交流对话",
+      "result_text": "[s6.name]运用着自己所认知的一切体面话，同眼前的贵族附和交流着。",
+      "result": {
+        "s6+社交": 1
+      },
+      "action": {
+
+      }
+    },
+    {
+      "condition": {
+        "s7": 1
+      },
+      "result_title": "平地隐藏",
+      "result_text": "人们总说，只有平地才能看出来一个人隐匿的水平，[s7.name]严密的趴在地上，搜索着能够让其用于藏身的事物。",
+      "result": {
+        "s7+隐匿": 1
+      },
+      "action": {
+
+      }
+    },
+    {
+      "condition": {
+        "s8": 1
+      },
+      "result_title": "野外求生",
+      "result_text": "[s8.name]运用着他不多的知识，努力辨认着一切有助于他生存下去的事物。",
+      "result": {
+        "s8+生存": 1
+      },
+      "action": {
+
+      }
+    },
+    {
+      "condition": {
+        "s9": 1
+      },
+      "result_title": "与天相感",
+      "result_text": "[s9.name]端坐坐垫上，平静心神，感应着空气中细微的波动。",
+      "result": {
+        "s9+魔力": 1
+      },
+      "action": {
+
+      }
+    },
+    //{
+    //  "condition": {
+    //    "s3": 1,
+    //    "s3.主角": 1,
+    //    "s3.魅力>=": 5,
+    //    "!have.2000469.已拥有": 1
+    //  },
+    //  "result_title": "何人引人念？",
+    //  "result_text": "你一如既往的训练着，尽可能为自己多赢取一丝活下去的希望。\n你四处挥洒着你的魅力，并将其发挥的更好。\n何人引人念？\n你因一些情况离开，再次当再次回来，你放在原地的衣物已经沾上了不知名的白浊，腥臭味在空气中传播，令你作呕。\n你准备将其扔掉时，一封信封从中掉了出来——那是一首情诗，记载着他对你污秽的幻想。",
+    //  "result": {
+    //    "card": [ 2000469, "已拥有+1" ]
+    //  },
+    //  "action": {
+
+    //  }
+    //},
+    //{
+    //  "condition": {
+    //    "s5": 1,
+    //    "s5.主角": 1,
+    //    "s5.战斗>=": 5,
+    //    "!have.2000013.追随者": 1
+    //  },
+    //  "result_title": "何人使人随？",
+    //  "result_text": "你一如既往的训练着，尽可能为自己多赢取一丝活下去的希望。\n你挥舞着手中的武器，向着面前人的薄弱点进攻，终于，在一声金属的碰撞声后，你成功击落眼前人的武器。\n何人使人随？\n眼前的人是前几日找来的，他称自己为流浪的剑客，希望再次找到一份工作。你收留了他，并让他帮你训练战斗。\n经过几日的训练，你终于得以侥幸挑飞这位剑客的剑，也赢得了他的追随。",
+    //  "result": {
+    //    "card": [ 2000013, "追随者+1" ]
+    //  },
+    //  "action": {
+
+    //  }
+    //}
+  ],
+  "cards_slot": {
+    "s1": {
+      "condition": {
+        "type": "char", //
+        "主角": 1
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "主角"
+    },
+    "s2": {
+      "condition": {
+        "type": "char" //
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "体魄"
+    },
+    "s3": {
+      "condition": {
+        "type": "char" //
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "魅力"
+    },
+    "s4": {
+      "condition": {
+        "type": "char"
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "智慧"
+    },
+    "s5": {
+      "condition": {
+        "type": "char"
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "战斗"
+    },
+    "s6": {
+      "condition": {
+        "type": "char"
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "社交"
+    },
+    "s7": {
+      "condition": {
+        "type": "char"
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "隐匿"
+    },
+    "s8": {
+      "condition": {
+        "type": "char"
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "生存"
+    },
+    "s9": {
+      "condition": {
+        "type": "char"
+      },
+      "open_adsorb": 0,
+      "is_key": 0,
+      "is_empty": 1,
+      "is_enemy": 0,
+      "text": "魔力"
+    }
+  }
+} 
